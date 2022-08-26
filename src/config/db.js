@@ -4,7 +4,7 @@ module.exports = {
     port: 5432,
     username: 'postgres',
     password: '123456',
-    database: 'postgres',
+    database: 'crudnode',
     define: {
         timestamps: true,
         underscored: true

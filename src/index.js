@@ -1,8 +1,12 @@
 const express = require('express');
 const routes = require('./routes');
 
+require('./database')
+
 const server = express();
 const port = 3000;
+
+server.use(express.json())
 
 server.use(routes)
 
