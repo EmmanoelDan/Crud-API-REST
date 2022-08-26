@@ -51,8 +51,10 @@ module.exports = {
 
         if(user !== null) {
             await user.destroy()
+
+            return res.json({message: "User Deleted!"})
         }
 
-        return res.json(user);
+        return res.json({message: "User Already Exists!"});
     }
 }
